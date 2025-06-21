@@ -1,0 +1,143 @@
+html {
+  font-family: sans-serif;
+}
+
+header, li{
+    background-color: turquoise;
+    transform: rotate(0.003turn);
+}
+
+@media (min-width: 1000px){
+    body{
+        background: linear-gradient(rgb(160, 118, 123),rgb(255,255,255))
+    }
+}
+
+@media (max-width: 1000px){
+    body{
+        padding: 10px 10px 10px 10px;
+        background: linear-gradient(rgb(255,255,255), rgb(160, 118, 123))
+    }
+}
+
+h1 {
+    font-size: 50px;
+    font-style: italic;
+    color: hotpink;
+    border-bottom:dotted;
+}
+
+.special {
+    font-style: italic;
+    font-weight: bold;
+    color:orange;
+}
+
+li em{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1+h2{
+    font-size: 200%;
+}
+
+/* a{
+    
+} */
+
+a:link {
+    color : pink;
+}
+
+a:visited {
+    color : orange;
+}
+
+a:hover {
+    color : red;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #eeeeee;
+}
+
+#idtest,
+ul
+{
+    background-color: white;
+}
+
+*{
+    margin:10;
+}
+
+video{
+    transform:rotate3d(1,0.5,0,0.1turn)
+}
+
+/* temporary styling for testing and learning only (most of this file is like that though :( */
+
+/* li[class] {
+    font-size: 120%;
+}
+
+li[class="a"]{
+    background-color: yellow;
+}
+
+li[class~="a"]{
+    color: red;
+}
+
+li[class="ab"]{
+    color:white;
+    background-color: purple;
+}
+
+li[class^="a"] {
+  font-size: 120%;
+}
+
+li[class$="a"] {
+  background-color: yellow;
+}
+
+li[class*="a"] {
+  color: red;
+} */
+
+li[class$="a"], li[class$="b"]{
+    border: 2px solid black;
+}
+
+footer p:first-child::first-line{
+    font-style: italic;
+}
+
+:hover{
+    font-size: 101%;
+}
+
+textarea::selection{
+    background-color: yellow;
+    color: red;
+}
+
+footer p:first-child::before, footer p:first-child::after{
+    content: "~";
+    display:inline-block;
+    width: 18px;
+    height:18px;
+    background-color: black;
+    border: 1px dotted white;
+    margin: 10px    
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing:inherit;
+}
