@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'afta_sans';
+    src: url('fonts/aftasansthin-italic-webfont.woff2') format('woff2'),
+         url('fonts/aftasansthin-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'afta_sans';
+    src: url('fonts/aftasansthin-regular-webfont.woff2') format('woff2'),
+         url('fonts/aftasansthin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'afta_serif';
+    src: url('fonts/aftaserifthin-italic-webfont.woff2') format('woff2'),
+         url('fonts/aftaserifthin-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'afta_serif';
+    src: url('fonts/aftaserifthin-regular-webfont.woff2') format('woff2'),
+         url('fonts/aftaserifthin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html{
+  font-family: "afta_serif";
+  font-size: 10px;
+  line-height: 2;
+}
+body h1,body  h2{
+  font-family: "afta_sans";
+  letter-spacing: 4px;
+}
+body h1{
+  font-size: 3rem;
+  text-align: center;
+}
+body h2{
+  font-size: 2rem;
+}
+
+section h2 + p{
+  text-indent: 20px;
+}
+
+body{
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+a{
+  color:darkred;
+  text-decoration: underline;
+  outline:none;
+}
+a:link{
+  color:darkred
+}
+a:visited{
+  color:rgb(76, 0, 0);
+}
+a:focus{
+  color:darkred;
+  text-decoration: none;
+}
+a:hover{
+  color:red;
+  text-decoration: none;
+}
+a:active{
+  font-style:italic;
+}
+a[href^="http"]:after{
+  content:'';
+  display:inline-block;
+  width:0.8em;
+  height:0.8em;
+  background-size:100%;
+  background-image:url(external-link-52.png);
+}
+
+ol, ul{
+  border-spacing: 2;
+}
+li{
+  line-height: 2;
+  list-style-type: upper-roman;
+}
+
+nav ul li{
+  line-height: 4;
+}

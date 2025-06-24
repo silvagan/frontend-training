@@ -115,9 +115,9 @@ footer p:first-child::first-line{
     font-style: italic;
 }
 
-:hover{
+/* :hover{
     font-size: 101%;
-}
+} */
 
 textarea::selection{
     background-color: yellow;
@@ -140,4 +140,27 @@ html {
 
 *, *::before, *::after {
     box-sizing:inherit;
+}
+
+button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+h2 {
+    color:black;
+    font-family: Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 1px red;
+    letter-spacing: 10px;
+}
+
+h2::first-letter{
+    font-size: 3em;
 }

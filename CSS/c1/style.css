@@ -1,0 +1,95 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+h2, p{
+    margin: 0;
+}
+
+
+/*General page styles*/
+/*
+at bottom .card article img specificy = 3
+almost at bottom .card footer specificy = 2
+almost at bottom .card header specificy = 2
+at middle .card specificy = 1
+*/
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+  padding: 0px;
+  box-sizing: content-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*Card container setup styles*/
+
+.card{
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: red;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+    border-collapse: collapse;
+}
+
+/*Header and footer styles*/
+
+.card header{
+    background-image: linear-gradient(to bottom, hsl(from red 0 100% 100%), color(srgb 0.46 0.26 0.26));
+    border-top-right-radius: 1.3em;
+    border-top-left-radius: 1.3em;
+}
+
+.card footer{
+    background-image: linear-gradient(to bottom, color(srgb 0.46 0.26 0.26), hsl(from red 0 100% 100%));
+    border-bottom-right-radius: 1.3em;
+    border-bottom-left-radius: 1.3em;
+}
+
+.card footer, .card header{
+    height:5em;
+    padding:1em;
+    box-sizing: border-box;
+}
+
+/*Main business card contents styles*/
+
+.card article {
+    height:12em;
+    background-color: #00000080;
+}
+
+.card article img{
+    float: right;
+    max-height:100%;
+    max-width:100%;
+}
+
+.card h2{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.card footer p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.card article p {
+    padding: 1em;
+    color: #fff;
+}

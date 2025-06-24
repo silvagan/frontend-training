@@ -1,0 +1,27 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+div{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    box-sizing:content-box;
+    border-collapse: collapse;
+
+    /* seeing how the default font size is 16px and rem is the relative size of the root node, 
+    in order to get the text to be 17 px, it is enough to assign a value of 1.0625rem.  */ 
+    font-size: 1.0625rem;
+    background-color: rgb(80, 188, 210); 
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    border-radius: 15px;
+    border: 1px solid rgb(44, 112, 125);
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)30%);
+    box-shadow: 0px 0px 4px 1px black, 
+                inset 3px 3px 4px 3px #fff7,
+                inset -3px -3px 4px 3px #0007;
+}
