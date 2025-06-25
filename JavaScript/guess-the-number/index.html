@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="module" src="script.js"></script>
+        <style>
+            main{
+                align-content: center;
+                text-align: center;
+                vertical-align: middle;
+                display: flex;
+                justify-content: center;
+            }
+            input{
+                font-size: 100px;
+                text-align: center;
+                width: 400px;
+            }
+            h1{
+                text-align: center;
+                font-size: 50px;
+                font-family:'Courier New', Courier, monospace;
+            }
+            #help{
+                font-style: italic;
+                text-align: center;
+                color: red;
+            }
+            .button{
+                align-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Guess the number game</h1>
+        </header>
+        <main id="main">
+            <input name="number-input" id="num" type="number"></input>
+            <button class="button">Guess!</button>
+        </main>
+        <p id="help"> </p>
+        <p id="prev guesses"> </p>
+        <p id="turns"> turn left: 10</p>
+    </body>
+</html>
