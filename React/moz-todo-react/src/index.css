@@ -10,6 +10,7 @@
 }
 html {
   font: 62.5% / 1.15 sans-serif;
+  background-color: midnightblue;
 }
 h1,
 h2 {
@@ -55,7 +56,7 @@ input[type="text"] {
 }
 body {
   background-color: #f5f5f5;
-  color: #4d4d4d;
+  color: #aaa;
   font:
     1.6rem/1.25 Arial,
     sans-serif;
@@ -76,7 +77,7 @@ body {
   margin-top: 0.4rem;
 }
 .btn {
-  border: 0.2rem solid #4d4d4d;
+  border: 0.2rem solid #aaa;
   cursor: pointer;
   padding: 0.8rem 1rem 0.7rem;
   text-transform: capitalize;
@@ -86,20 +87,20 @@ body {
   border-width: 1px;
 }
 .btn.toggle-btn[aria-pressed="true"] {
-  border-color: #4d4d4d;
+  border-color: #aaa;
   text-decoration: underline;
 }
 .btn__danger {
   background-color: #ca3c3c;
   border-color: #bd2130;
-  color: #fff;
+  color: #aaa;
 }
 .btn__filter {
   border-color: lightgrey;
 }
 .btn__primary {
   background-color: #000;
-  color: #fff;
+  color: #aaa;
 }
 .btn-group {
   display: flex;
@@ -148,7 +149,7 @@ body {
 /* End global styles */
 /* General app styles */
 .todoapp {
-  background: #fff;
+  background: #222;
   box-shadow:
     0 2px 4px 0 rgb(0 0 0 / 20%),
     0 2.5rem 5rem 0 rgb(0 0 0 / 10%);
